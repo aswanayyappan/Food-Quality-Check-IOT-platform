@@ -8,8 +8,8 @@ const LOCAL_STORAGE_HISTORY_KEY = 'freshtrack_telemetry_history_v1';
 const LOCAL_STORAGE_SETTINGS_KEY = 'freshtrack_user_settings_v1';
 
 export function FreshTrackProvider({ children }) {
-  // Navigation active tab
-  const [activeTab, setActiveTab] = useState('overview');
+  // Navigation active tab (defaults to unified clean dashboard)
+  const [activeTab, setActiveTab] = useState('dashboard');
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
 
   // Selected food profile - default is 'mixed' as required by prompt
